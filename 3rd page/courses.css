@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+
+body{
+    background-image: url('images/300.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navigationbar {
+  background-color: rgb(238, 238, 238);
+  border: 10px;
+  border-color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  
+  list-style-type: none;
+  font-family: 'Lato', sans-serif;
+  margin: 0px 100px;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}
+
+ul li {
+  float: left;
+  margin: 0px 5px;
+  transition: 0.5s;
+}
+
+ul li a {
+  display: block;
+  position: relative;
+  text-decoration: none;
+  padding:10px;
+  font-size: 18px;
+  text-align: center;  
+}
+
+ul li a:hover {
+background-color: rgb(214, 209, 209);
+transform:scale(1.2);
+opacity: 1;
+filter: blur(0);
+text-decoration: none;
+color: black;
+}
+
+ul li a:before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: orange;
+  transition: 0.5s;
+  transform-origin: right;
+  transform: scaleX(0);
+  z-index: -1;
+}
+
+ul li a:hover:before {
+  transition: transform 0.5s;
+  transform-origin: left;
+  transform: scaleX(1);
+}
+
+.card{
+  width: 30%;
+  margin: 0px 20px;
+  border: 2px orange solid;
+  color: rgb(0, 0, 0);
+  font-family: 'Open Sans ', sans-serif;
+  cursor: pointer;
+
+}
+
+.img-container{
+    height: 200px;
+}
+.course-title{
+    font-size:large;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#listing {
+  border-radius: 17px;
+  text-align: center;
+}
+
+#listing :hover{
+    background-color: rgb(255, 132, 0);
+    font-size: 20px;
+    transition: .5s;
+    color: aliceblue;
+    cursor:pointer;
+}
+
+
+
+
+

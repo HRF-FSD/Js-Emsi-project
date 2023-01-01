@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: aliceblue;
+}
+#test{
+    color: brown;
+}
+.navigationbar {
+    background-color: rgb(238, 238, 238);
+    border: 10px;
+    border-color: rgb(0, 0, 0);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    
+    list-style-type: none;
+    font-family: 'Lato', sans-serif;
+    margin: 0px 100px;
+    padding: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+ul li {
+    float: left;
+    margin: 0px 5px;
+    transition: 0.5s;
+}
+
+ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none;
+    padding:10px;
+    font-size: 18px;
+    text-align: center;  
+}
+
+ul li a:hover {
+ background-color: rgb(214, 209, 209);
+ transform:scale(1.2);
+ opacity: 1;
+ filter: blur(0);
+ text-decoration: none;
+ color: black;
+}
+
+ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: orange;
+    transition: 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+}
+
+ul li a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+
+#home {
+    background-image: url("../image/coding.jpg");
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+#home .text-container {
+    background-color: black;
+    justify-content: center;
+    display: block;
+    color: white;
+    margin: 40px;
+    padding: 70px;
+    border-radius: 5px;
+    width: 50em;
+    height: 23em;
+    position: static;
+    filter: opacity(80%);
+    right: 550px;
+    left: 300px;
+}
+#home .text-container h1 {
+    font-family: 'Kaushan script', sans-serif;
+    text-align: center;
+}
+ #home .text-container p {
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    margin-bottom: 15px;
+ }
+
+ #home .text-container button {
+    cursor: pointer;
+    background-color: rgb(255, 166, 0);
+    border: 2px ;
+    border-radius: 3px;
+    color: #fff;
+    display: block;
+    font-size: 11px;
+    padding: 5px;
+    margin-top: 5px;
+    margin: auto;
+    
+ }
+
+#coursePreview {
+  text-align: center;
+  justify-content: center;
+  margin-top: 10vh;
+}
+
+.courses-container {
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    margin: 0;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 0;
+    font-size: 82%;
+}
+
+.courses-container .course {
+    text-align: center;
+    padding: 3rem 2rem;
+    cursor: pointer;
+}
+
+
+
+.courses-container .course .image_container{
+    margin: 50px;
+    margin-top: 0;
+    width:320px;
+    height: 11rem;
+    border-radius: 5px;
+    transition: all .44s ease-in-out;
+}
+.courses-container .course .image_container img{
+    width:100%;
+    height: 100%;
+}
+
+.courses-container .course .image_container:hover{
+    transform: scale(.9);
+}
+
+/* .courses-container .course h3 {
+    padding: 2px;
+} */
+
+.to-allcourses button{
+    cursor: pointer;
+    background-color: rgb(215, 146, 16);
+    width: 9%;
+    border: 5px ;
+    border-radius: 5px;
+    border-color: #777;
+    color: #fff;
+    display: block;
+    font-size: 11px;
+    padding: 12px ;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin: auto;
+}
+
+footer p{
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    font-size: smaller;
+    margin-top: 15px;
+}
